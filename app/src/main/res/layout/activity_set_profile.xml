@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".set_profile">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save your profile"
+        android:textColor="#25d366"
+        android:textSize="30sp"
+        android:id="@+id/profiletxt"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="130dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/profiletxt"
+        android:id="@+id/userphoto"
+        android:layout_centerHorizontal="true" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/wplogo"
+            android:id="@+id/getuserimage"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userphoto"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="textCapWords" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save profile"
+        android:textSize="20sp"
+        android:background="#25d366"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
