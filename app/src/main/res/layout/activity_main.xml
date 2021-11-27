@@ -28,14 +28,15 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:id="@+id/center"/>
+
     <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodeHolder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/center"
-        android:id="@+id/countryCodeHolder"
         android:layout_centerHorizontal="true"
         app:ccp_areaCodeDetectedCountry="true"
-        app:ccp_textSize="20dp"/>
+        app:ccp_textSize="20dp" />
 
     <EditText
         android:id="@+id/number"
@@ -52,6 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="#25d366"
+        android:id="@+id/sendbutton"
         android:text="Send otp"
         android:textColor="@color/white" />
 
